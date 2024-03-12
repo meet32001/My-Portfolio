@@ -1,0 +1,800 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color:#042B44 ; */
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Start of Nav bar */
+nav {
+  /* border: 2px solid white; */
+  width: 100%;
+  color: black;
+  display: flex;
+  height: 7rem;
+  padding: 10px 0 10px 0;
+}
+
+nav > ul,
+.centerNavbar {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > .leftNavbar > li > a,
+ul > .rightNavbar > li > a{
+  font-size: 22px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > .leftNavbar > li > a:hover, ul > .rightNavbar > li > a:hover{
+    text-decoration-line: underline;
+    text-shadow: 2px 2px rgb(154, 150, 150);;
+}
+
+nav > ul > .leftNavbar,
+ul > .rightNavbar {
+  display: flex;
+}
+
+nav > ul > .leftNavbar {
+  margin-left: 1.5rem;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+}
+
+nav > .centerNavbar {
+  width: 200px;
+  margin-left: 30rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+nav > ul > .rightNavbar {
+  margin-left: 18rem;
+  width: 470px;
+  display: flex;
+  padding: 10px;
+}
+
+nav > ul > .rightNavbar > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end of Nav bar */
+
+/* Start  of section */
+/* Start  of first part in section */
+.firstSection {
+  width: auto;
+  height: auto;
+  /* border: 2px solid black; */
+  padding: 20px;
+}
+
+.firstSection > .introductionDiv {
+  width: 60%;
+  height: 60rem;
+  /* border: 2px solid red; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 22%;
+  padding: 10px;
+}
+.firstSection > .introductionDiv > #imageDiv {
+  width: 35rem;
+  height: 35rem;
+  /* border: 2px solid red; */
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  gap: 5rem;
+}
+
+.firstSection > .introductionDiv > #imageDiv > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv {
+  width: 41%;
+  height: 30rem;
+  /* border: 2px solid green; */
+  position: absolute;
+  color: black;
+  left: 40rem;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .hellodiv {
+  color: rgb(85, 85, 85);
+  margin-bottom: 3%;
+  margin-top: 20%;
+  font-weight: bold;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > #namediv {
+  font-weight: bold;
+  font-size: 70px;
+  margin: 0%;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > #profileDetails {
+  margin-top: 5%;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  gap: 1rem;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > .buttons {
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 45px;
+  font-weight: bold;
+  width: 500px;
+  height: 4rem;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > .buttons:hover{
+    background-color: rgb(52, 51, 51);
+    color: white;
+    box-shadow: 5px 10px 13px #888888;
+    border: 0 ;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > #contactButton:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 13px #888888;
+    border: 0 ;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > #contactButton {
+  background-color:rgb(52, 51, 51);
+  color: white;
+}
+
+.firstSection > .introductionDiv > #personalDetailDiv > .socialMediaDetails {
+  /* border: 2px solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  gap: 1rem;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > .socialMedialogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  /* border: 2px solid brown; */
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > #linkedinlogoDiv {
+  width: 65px;
+  height: 65px;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > .socialMedialogo
+  > a >  #linkedinlogo{
+  width: 100%;
+  height: 100%;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > .socialMedialogo
+  > a > #githublogo {
+  width: 100%;
+  height: 100%;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > #facebooklogoDiv {
+  width: 52px;
+  height: 52px;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > .socialMedialogo
+  > a > #facebooklogo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > #instagramlogoDiv {
+  width: 52px;
+  height: 52px;
+}
+
+.firstSection
+  > .introductionDiv
+  > #personalDetailDiv
+  > .socialMediaDetails
+  > #instagramlogoDiv
+  > a >  #instagramlogo {
+  width: 100%;
+  height: 100%;
+}
+/* end  of first part in section */
+
+/* Start  of second part in section */
+.secondSection {
+  width: 100%;
+  height: 66rem;
+  /* border: 2px solid red; */
+  position: relative;
+  margin-top: 5rem;
+}
+
+.secondSection > #getToKnowDiv {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 10rem;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+}
+
+.secondSection > #getToKnowDiv > #getToKnowpara {
+  margin: 0;
+  color: rgb(85, 85, 85);
+}
+
+.secondSection > #getToKnowDiv > #aboutmepara {
+  font-weight: bold;
+  font-size: 70px;
+  margin-top: 10px;
+}
+
+.secondSection > .aboutDiv {
+  margin-top: 10px;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.secondSection > .aboutDiv > #imageDiv {
+  /* border: 2px solid green; */
+  position: absolute;
+  overflow: hidden;
+  width: 26rem;
+  height: 32rem;
+  left: 17%;
+  border-radius: 15%;
+}
+
+.secondSection > .aboutDiv > #imageDiv > img {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
+}
+
+.secondSection > .aboutDiv > #aboutMeInfo {
+  /* border: 2px solid blue; */
+  position: absolute;
+  /* display: flex; */
+  width: 55rem;
+  height: 30rem;
+  left: 45%;
+  padding: 20px;
+}
+
+.secondSection > .aboutDiv > #aboutMeInfo > .twoqualificationDiv {
+  /* border: 2px solid darkblue; */
+  width: 100%;
+  height: 17rem;
+  padding: 20px;
+  display: flex;
+  gap: 3rem;
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification {
+  border: 2px solid;
+  border-color: rgb(85, 85, 85);
+  border-radius: 30px;
+  width: 400px;
+  height: 220px;
+  color: black;
+  display: block;
+  padding: 20px;
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification
+  > .aboutmelogo {
+  width: 3rem;
+  height: 3rem;
+  /* border: 2px solid black; */
+  margin-left: 9rem;
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification
+  > .aboutmelogo
+  > img {
+  width: 100%;
+  height: 100%;
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification
+  > p {
+  text-align: center;
+  /* border: 2px solid violet; */
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: rgb(85, 85, 85);
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification
+  > #experiencepara {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .education
+  > p {
+  text-align: center;
+  /* border: 2px solid violet; */
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: rgb(85, 85, 85);
+}
+
+.secondSection
+  > .aboutDiv
+  > #aboutMeInfo
+  > .twoqualificationDiv
+  > .qualification
+  > #educationpara {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.secondSection > .aboutDiv > #aboutMeInfo > .aboutmeparaDiv > p {
+  color: rgb(85, 85, 85);
+  font-size: 23px;
+  margin-left: 1.4rem;
+  font-stretch: ultra-expanded;
+}
+
+.secondSection > .downlogo {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+}
+
+.secondSection > .downlogo > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* end  of second part in section */
+
+/* Start  of third part in section */
+.thirdSection {
+  width: 100%;
+  height: 66rem;
+  /* border: 2px solid red; */
+  position: relative;
+  margin-top: 15px;
+}
+
+.thirdSection > #experienceheadingDiv {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 10rem;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+}
+
+.thirdSection > #experienceheadingDiv > #exploremypara {
+  margin: 0;
+  color: rgb(85, 85, 85);
+}
+
+.thirdSection > #experienceheadingDiv > #experiencepara {
+  font-weight: bold;
+  font-size: 70px;
+  margin-top: 10px;
+}
+
+.thirdSection > .experienceDetailsDiv {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 43rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.thirdSection > .experienceDetailsDiv > .skills {
+  border: 2px solid;
+  border-color: rgb(85, 85, 85); ;
+  width: 800px;
+  height: 30rem;
+  border-radius: 30px;
+}
+
+.thirdSection > .experienceDetailsDiv > .skills >p{
+    color: rgb(85, 85, 85);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.thirdSection > .experienceDetailsDiv > .skills > .skillsName {
+  margin: 10px;
+  display: flex;
+  gap: 5rem;
+}
+
+.thirdSection > .experienceDetailsDiv > .skills > .skillsName > .skillsDetails {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+}
+
+.thirdSection
+  > .experienceDetailsDiv
+  > .skills
+  > .skillsName
+  > .skillsDetails
+  > img {
+  /* border: 2px solid blue; */
+  width: 50px;
+  height: 50px;
+}
+
+.thirdSection
+  > .experienceDetailsDiv
+  > .skills
+  > .skillsName
+  > .skillsDetails
+  > .skillsNameExperienced
+  > p {
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(85, 85, 85);
+  margin: 10%;
+}
+
+.thirdSection
+  > .experienceDetailsDiv
+  > .skills
+  > .skillsName
+  > .skillsDetails
+  > .skillsNameExperienced
+  > #htmltag {
+    color: black;
+    font-weight: bold;
+}
+
+.thirdSection > .downlogo {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+}
+
+.thirdSection > .downlogo > img {
+  width: 100%;
+  height: 100%;
+}
+/* end  of third part in section */
+
+/* Start  of fourth part in section */
+.fourthSection {
+    width: 100%;
+    height: 66rem;
+    /* border: 2px solid red; */
+    position: relative;
+    margin-top:15px ;
+}
+
+.fourthSection > #projectheadingDiv {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10rem;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+  }
+  
+.fourthSection > #projectheadingDiv > #browsermyrecent {
+    margin: 0;
+    color: rgb(85, 85, 85);
+}
+  
+.fourthSection > #projectheadingDiv > #projectpara {
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.fourthSection > .projectsDiv{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+.fourthSection > .projectsDiv > .projectsDetailDiv{
+    border: 2px solid black;
+    width: 26%;
+    height: 40rem;
+    border-radius: 40px;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > .imageDiv{
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid orange; */
+    margin: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > .imageDiv >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > p{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv > button{
+    width: 180px;
+    height: 4rem;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+}
+
+.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv > button > .button{
+    background: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.fourthSection > .downlogo {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+}
+  
+.fourthSection > .downlogo > img {
+    width: 100%;
+    height: 100%;
+}
+/* end  of fourth part in section */
+/* end  of section */
+
+/* Start  of footer */
+footer {
+  width: 100%;
+  height: 67rem;
+  /* border: 2px solid red; */
+  padding: 20px;
+  color: black;
+  position: relative;
+}
+
+footer > .footerDetailsDiv {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 10rem;
+    color: black;
+    text-align: center;
+    margin-top: 15rem;
+  }
+  
+footer > .footerDetailsDiv > #getintouch{
+    margin: 10px;
+    color: rgb(85, 85, 85);
+    font-size: 25px;
+}
+  
+footer > .footerDetailsDiv > #contactme{
+    font-weight: bold;
+    font-size: 70px;
+    margin: 10px;
+} 
+
+footer > #emaillinkDiv{
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 10rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > #emaillinkDiv > .emailDiv{
+    border: 2px solid;
+    border-color: rgb(154, 150, 150);
+    font-size: 25px;
+    width: 40%;
+    height: 7rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+
+footer > #emaillinkDiv > .emailDiv > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+footer > #emaillinkDiv > .emailDiv > #linkedinid{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+    /* border: 2px solid green; */
+}
+
+footer > #emaillinkDiv > .emailDiv > #emailid{
+    margin-right: 50px;
+}
+
+footer > #emaillinkDiv > .emailDiv > p{
+    margin-right: 30px;
+}
+
+footer > #footerNavDiv{
+    width: 550px;
+    height: 7rem;
+    bottom: 10px;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+footer > #footerNavDiv > ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 10px;
+    margin: 0;
+
+}
+
+footer > .copyRightDiv{
+    /* border: 2px solid black; */
+    width: 550px;
+    height: 5rem;
+    font-size: 20px;
+    margin-left: 35%;
+    text-align: center;
+    padding-top: 10px;
+}
+/* end  of footer */
