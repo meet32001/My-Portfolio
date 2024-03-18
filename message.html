@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&family=Black+And+White+Picture&family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <nav id="home">
+        <ul>
+          <div class="leftNavbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#experiencesection">Experience</a></li>
+          </div>
+        </ul>
+  
+        <div class="centerNavbar">
+          <p>Allure</p>
+        </div>
+  
+        <ul>
+          <div class="rightNavbar">
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contactmeSetion">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <div id="formdiv">
+        <h1>Contact us</h1>
+        <hr>
+        <p>We would love to hear from you! Leave a message below and we will get back to you shortly.</p>
+
+        <form>
+            <div class="inputDiv" id="nameDiv">
+                <label for="name">Name: <span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required> 
+            </div>
+            
+            <div class="inputDiv" id="emailDiv">
+                <label for="email">Email:<span style="color: red;">*</span></label>
+                <input type="text" id="email" name="email" placeholder="Email Address" required>   
+            </div>
+
+            <div class="inputDiv" id="messageDiv">
+                <label for="message">Message:<span style="color: red;">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <a id="submitbtn" class="inputDivsubmit"><button>Submit</button></a>
+        </form> 
+    </div>
+
+    <script>
+    document.getElementById('submitbtn').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Check if the name and email fields are not empty
+      var nameValue = document.getElementById('name').value.trim();
+      var emailValue = document.getElementById('email').value.trim();
+      var messageValue = document.getElementById('message').value.trim();
+
+      if (nameValue !== '' && emailValue !== '' && messageValue !=='') {
+        // Display a thank you message using an alert dialog
+        alert('Thank you for submitting!');
+      } else {
+        // Show an alert if the form fields are not filled out
+        alert('Please fill out all the required fields.');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,26 +1,36 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  /* background-color:#042B44 ; */
-  color: white;
+  display:flex; flex-direction:column; justify-content:center;
+  min-height:100vh;
+  padding: 5px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  /* overflow-x: hidden; */
 }
-
-/* Start of Nav bar */
-nav {
-  /* border: 2px solid white; */
-  width: 100%;
-  color: black;
+main{
+  background-color: blue;
   display: flex;
-  height: 7rem;
-  padding: 10px 0 10px 0;
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-nav > ul,
+/* Start  of web page */
+/* Start of Nav bar */
+
+nav {
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .centerNavbar {
   text-decoration: none;
   list-style: none;
@@ -28,51 +38,54 @@ nav > ul,
   align-items: center;
 }
 
-nav > ul > .leftNavbar > li > a,
-ul > .rightNavbar > li > a{
+.leftNavbar > li > a,
+.rightNavbar > li > a{
   font-size: 22px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   text-transform: uppercase;
   text-decoration: none;
   color: black;
 }
 
-nav > ul > .leftNavbar > li > a:hover, ul > .rightNavbar > li > a:hover{
+.leftNavbar > li > a:hover, ul > .rightNavbar > li > a:hover{
     text-decoration-line: underline;
     text-shadow: 2px 2px rgb(154, 150, 150);;
 }
 
-nav > ul > .leftNavbar,
-ul > .rightNavbar {
+.leftNavbar,
+.rightNavbar {
   display: flex;
 }
 
-nav > ul > .leftNavbar {
-  margin-left: 1.5rem;
+.leftNavbar {
+  /* margin-left: 1.5rem; */
   padding: 10px;
-  width: 300px;
+  /* width: 300px; */
   display: flex;
+  float: left;
   text-align: center;
 }
 
-nav > .centerNavbar {
-  width: 200px;
-  margin-left: 30rem;
-  padding: 5px;
-  display: flex;
+.centerNavbar {
+   /* width: 200px; */
+  /* margin-left: 30rem; */
+  /* padding: 5px; */
+  /* display: flex; */
+  color: black;
   align-items: center;
   justify-content: center;
-  font-size: 70px;
+  /* font-size: 70px; */
 }
 
-nav > ul > .rightNavbar {
-  margin-left: 18rem;
-  width: 470px;
+.rightNavbar {
+  /* margin-left: 18rem; */
+  /* width: 470px; */
   display: flex;
+  float: right;
   padding: 10px;
 }
 
-nav > ul > .rightNavbar > li > a {
+.rightNavbar > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,21 +97,22 @@ nav > ul > .rightNavbar > li > a {
 .firstSection {
   width: auto;
   height: auto;
+  margin-top: 10%;
   /* border: 2px solid black; */
   padding: 20px;
 }
 
-.firstSection > .introductionDiv {
+.introductionDiv {
   width: 60%;
   height: 60rem;
   /* border: 2px solid red; */
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   margin-left: 22%;
   padding: 10px;
 }
-.firstSection > .introductionDiv > #imageDiv {
+#imageDiv {
   width: 35rem;
   height: 35rem;
   /* border: 2px solid red; */
@@ -108,42 +122,42 @@ nav > ul > .rightNavbar > li > a {
   gap: 5rem;
 }
 
-.firstSection > .introductionDiv > #imageDiv > img {
+#imageDiv > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv {
-  width: 41%;
+#personalDetailDiv {
+  width: 50%;
   height: 30rem;
   /* border: 2px solid green; */
-  position: absolute;
+  /* position: relative; */
   color: black;
-  left: 40rem;
+  /* left: 40rem; */
   text-align: center;
   font-size: 30px;
   padding: 20px;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .hellodiv {
+.hellodiv {
   color: rgb(85, 85, 85);
   margin-bottom: 3%;
   margin-top: 20%;
   font-weight: bold;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > #namediv {
+#namediv {
   font-weight: bold;
   font-size: 70px;
   margin: 0%;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > #profileDetails {
+#profileDetails {
   margin-top: 5%;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv {
+.buttonsDiv {
   width: 100%;
   height: auto;
   display: flex;
@@ -151,7 +165,7 @@ nav > ul > .rightNavbar > li > a {
   gap: 1rem;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > .buttons {
+.buttons {
   border: 2px solid black;
   font-size: 20px;
   background-color: transparent;
@@ -161,26 +175,26 @@ nav > ul > .rightNavbar > li > a {
   height: 4rem;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > .buttons:hover{
+.buttons:hover{
     background-color: rgb(52, 51, 51);
     color: white;
     box-shadow: 5px 10px 13px #888888;
     border: 0 ;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > #contactButton:hover{
+#contactButton:hover{
     background-color: white;
     color: black;
     box-shadow: 5px 10px 13px #888888;
     border: 0 ;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .buttonsDiv > #contactButton {
+#contactButton {
   background-color:rgb(52, 51, 51);
   color: white;
 }
 
-.firstSection > .introductionDiv > #personalDetailDiv > .socialMediaDetails {
+.socialMediaDetails {
   /* border: 2px solid brown; */
   display: flex;
   justify-content: center;
@@ -189,83 +203,44 @@ nav > ul > .rightNavbar > li > a {
   gap: 1rem;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > .socialMedialogo {
+.socialMedialogo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  overflow: hidden;
-  /* border: 2px solid red; */
-  /* border: 2px solid brown; */
-}
+  overflow: hidden;}
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > #linkedinlogoDiv {
+#linkedinlogoDiv {
   width: 65px;
   height: 65px;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > .socialMedialogo
-  > a >  #linkedinlogo{
+#linkedinlogo{
   width: 100%;
   height: 100%;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > .socialMedialogo
-  > a > #githublogo {
+#githublogo {
   width: 100%;
   height: 100%;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > #facebooklogoDiv {
+#facebooklogoDiv {
   width: 52px;
   height: 52px;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > .socialMedialogo
-  > a > #facebooklogo {
+#facebooklogo {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > #instagramlogoDiv {
+#instagramlogoDiv {
   width: 52px;
   height: 52px;
 }
 
-.firstSection
-  > .introductionDiv
-  > #personalDetailDiv
-  > .socialMediaDetails
-  > #instagramlogoDiv
-  > a >  #instagramlogo {
+#instagramlogo {
   width: 100%;
   height: 100%;
 }
@@ -277,10 +252,10 @@ nav > ul > .rightNavbar > li > a {
   height: 66rem;
   /* border: 2px solid red; */
   position: relative;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
-.secondSection > #getToKnowDiv {
+#getToKnowDiv {
   /* border: 2px solid red; */
   width: 100%;
   height: 10rem;
@@ -290,18 +265,18 @@ nav > ul > .rightNavbar > li > a {
   padding: 1%;
 }
 
-.secondSection > #getToKnowDiv > #getToKnowpara {
+#getToKnowpara {
   margin: 0;
   color: rgb(85, 85, 85);
 }
 
-.secondSection > #getToKnowDiv > #aboutmepara {
+#aboutmepara {
   font-weight: bold;
   font-size: 70px;
   margin-top: 10px;
 }
 
-.secondSection > .aboutDiv {
+.aboutDiv {
   margin-top: 10px;
   /* border: 2px solid red; */
   width: 100%;
@@ -311,33 +286,17 @@ nav > ul > .rightNavbar > li > a {
   align-items: center;
 }
 
-.secondSection > .aboutDiv > #imageDiv {
-  /* border: 2px solid green; */
-  position: absolute;
-  overflow: hidden;
-  width: 26rem;
-  height: 32rem;
-  left: 17%;
-  border-radius: 15%;
-}
-
-.secondSection > .aboutDiv > #imageDiv > img {
-  /* border: 2px solid green; */
-  width: 100%;
-  height: 100%;
-}
-
-.secondSection > .aboutDiv > #aboutMeInfo {
+#aboutMeInfo {
   /* border: 2px solid blue; */
-  position: absolute;
+  position: relative;
   /* display: flex; */
   width: 55rem;
   height: 30rem;
-  left: 45%;
-  padding: 20px;
+  justify-content: space-around;
+  align-content: center;
 }
 
-.secondSection > .aboutDiv > #aboutMeInfo > .twoqualificationDiv {
+.twoqualificationDiv {
   /* border: 2px solid darkblue; */
   width: 100%;
   height: 17rem;
@@ -346,11 +305,7 @@ nav > ul > .rightNavbar > li > a {
   gap: 3rem;
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification {
+.qualification {
   border: 2px solid;
   border-color: rgb(85, 85, 85);
   border-radius: 30px;
@@ -361,35 +316,20 @@ nav > ul > .rightNavbar > li > a {
   padding: 20px;
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification
-  > .aboutmelogo {
+.aboutmelogo {
   width: 3rem;
   height: 3rem;
   /* border: 2px solid black; */
   margin-left: 9rem;
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification
-  > .aboutmelogo
-  > img {
+.aboutmelogo img {
   width: 100%;
   height: 100%;
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification
-  > p {
+.qualification
+  p {
   text-align: center;
   /* border: 2px solid violet; */
   font-size: 22px;
@@ -398,24 +338,16 @@ nav > ul > .rightNavbar > li > a {
   color: rgb(85, 85, 85);
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification
-  > #experiencepara {
+.qualification
+  #experiencepara {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 0;
   color: black;
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .education
-  > p {
+.education
+  p {
   text-align: center;
   /* border: 2px solid violet; */
   font-size: 22px;
@@ -424,39 +356,31 @@ nav > ul > .rightNavbar > li > a {
   color: rgb(85, 85, 85);
 }
 
-.secondSection
-  > .aboutDiv
-  > #aboutMeInfo
-  > .twoqualificationDiv
-  > .qualification
-  > #educationpara {
+ .qualification
+  #educationpara {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 0;
   color: black;
 }
 
-.secondSection > .aboutDiv > #aboutMeInfo > .aboutmeparaDiv > p {
+.aboutmeparaDiv  p {
   color: rgb(85, 85, 85);
   font-size: 23px;
   margin-left: 1.4rem;
   font-stretch: ultra-expanded;
 }
 
-.secondSection > .downlogo {
+.aboutDiv .downlogo {
   width: 100px;
-  height: 100px;
-  /* border: 2px solid red; */
-  position: absolute;
   right: 2%;
-  bottom: 3%;
+  bottom: -7%;
+  position: absolute;
 }
 
-.secondSection > .downlogo > img {
+.aboutDiv .downlogo img {
   width: 100%;
-  height: 100%;
-}
-
+  height: 100%;}
 /* end  of second part in section */
 
 /* Start  of third part in section */
@@ -465,10 +389,10 @@ nav > ul > .rightNavbar > li > a {
   height: 66rem;
   /* border: 2px solid red; */
   position: relative;
-  margin-top: 15px;
+  margin-top: 5rem;
 }
 
-.thirdSection > #experienceheadingDiv {
+#experienceheadingDiv {
   /* border: 2px solid red; */
   width: 100%;
   height: 10rem;
@@ -478,18 +402,18 @@ nav > ul > .rightNavbar > li > a {
   padding: 1%;
 }
 
-.thirdSection > #experienceheadingDiv > #exploremypara {
+#experienceheadingDiv  #exploremypara {
   margin: 0;
   color: rgb(85, 85, 85);
 }
 
-.thirdSection > #experienceheadingDiv > #experiencepara {
+#experienceheadingDiv  #experiencepara {
   font-weight: bold;
   font-size: 70px;
   margin-top: 10px;
 }
 
-.thirdSection > .experienceDetailsDiv {
+.experienceDetailsDiv {
   /* border: 2px solid green; */
   width: 100%;
   height: 43rem;
@@ -500,7 +424,7 @@ nav > ul > .rightNavbar > li > a {
   gap: 5rem;
 }
 
-.thirdSection > .experienceDetailsDiv > .skills {
+.skills {
   border: 2px solid;
   border-color: rgb(85, 85, 85); ;
   width: 800px;
@@ -508,20 +432,20 @@ nav > ul > .rightNavbar > li > a {
   border-radius: 30px;
 }
 
-.thirdSection > .experienceDetailsDiv > .skills >p{
+.skills >p{
     color: rgb(85, 85, 85);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
 }
 
-.thirdSection > .experienceDetailsDiv > .skills > .skillsName {
+.skills > .skillsName {
   margin: 10px;
   display: flex;
   gap: 5rem;
 }
 
-.thirdSection > .experienceDetailsDiv > .skills > .skillsName > .skillsDetails {
+.skillsDetails {
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -530,24 +454,15 @@ nav > ul > .rightNavbar > li > a {
   width: 50%;
 }
 
-.thirdSection
-  > .experienceDetailsDiv
-  > .skills
-  > .skillsName
-  > .skillsDetails
-  > img {
+.skillsDetails
+   img {
   /* border: 2px solid blue; */
   width: 50px;
   height: 50px;
 }
 
-.thirdSection
-  > .experienceDetailsDiv
-  > .skills
-  > .skillsName
-  > .skillsDetails
-  > .skillsNameExperienced
-  > p {
+.skillsNameExperienced
+   p {
   color: black;
   font-size: 24px;
   text-transform: uppercase;
@@ -555,18 +470,13 @@ nav > ul > .rightNavbar > li > a {
   margin: 10%;
 }
 
-.thirdSection
-  > .experienceDetailsDiv
-  > .skills
-  > .skillsName
-  > .skillsDetails
-  > .skillsNameExperienced
-  > #htmltag {
+.skillsNameExperienced
+   #htmltag {
     color: black;
     font-weight: bold;
 }
 
-.thirdSection > .downlogo {
+.experienceDetailsDiv .downlogo {
   width: 100px;
   height: 100px;
   /* border: 2px solid red; */
@@ -575,7 +485,7 @@ nav > ul > .rightNavbar > li > a {
   bottom: 3%;
 }
 
-.thirdSection > .downlogo > img {
+.experienceDetailsDiv .downlogo img {
   width: 100%;
   height: 100%;
 }
@@ -587,10 +497,10 @@ nav > ul > .rightNavbar > li > a {
     height: 66rem;
     /* border: 2px solid red; */
     position: relative;
-    margin-top:15px ;
+    margin-top:10rem ;
 }
 
-.fourthSection > #projectheadingDiv {
+#projectheadingDiv {
     /* border: 2px solid red; */
     width: 100%;
     height: 10rem;
@@ -600,21 +510,21 @@ nav > ul > .rightNavbar > li > a {
     padding: 1%;
   }
   
-.fourthSection > #projectheadingDiv > #browsermyrecent {
+#browsermyrecent {
     margin: 0;
     color: rgb(85, 85, 85);
 }
   
-.fourthSection > #projectheadingDiv > #projectpara {
+#projectpara {
     font-weight: bold;
     font-size: 70px;
     margin-top: 10px;
 }
 
-.fourthSection > .projectsDiv{
+.projectsDiv{
     /* border: 2px solid green; */
     width: 100%;
-    height: 50rem;
+    /* height: 50rem; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -622,58 +532,49 @@ nav > ul > .rightNavbar > li > a {
     gap: 5rem;
   }
 
-.fourthSection > .projectsDiv > .projectsDetailDiv{
+.projectsDetailDiv{
     border: 2px solid black;
     width: 26%;
     height: 40rem;
     border-radius: 40px;
 }
 
-.fourthSection > .projectsDiv > .projectsDetailDiv > .imageDiv{
-    width: 400px;
-    height: 400px;
-    /* border: 2px solid orange; */
-    margin: 40px;
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-.fourthSection > .projectsDiv > .projectsDetailDiv > .imageDiv >img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.fourthSection > .projectsDiv > .projectsDetailDiv > p{
+.projectsDetailDiv  p{
     color: black;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv{
+.projectsDiv .buttonsDiv{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv > button{
-    width: 180px;
+.projectsDetailDiv  button{
+    width: 160px;
     height: 4rem;
     border-radius: 50px;
     border: 2px solid black;
     background-color: white;
     font-size: 20px;
 }
+.projectsDetailDiv button:hover{
+    background-color: rgb(52, 51, 51);
+    color: white;
+    box-shadow: 5px 10px 13px #888888;
+    border: 0 ;
+}
 
-.fourthSection > .projectsDiv > .projectsDetailDiv > .buttonsDiv > button > .button{
+.projectsDetailDiv .button{
     background: transparent;
     text-decoration: none;
     color: black;
 }
 
-.fourthSection > .downlogo {
+.row >.downlogo {
     width: 100px;
     height: 100px;
     /* border: 2px solid red; */
@@ -682,7 +583,7 @@ nav > ul > .rightNavbar > li > a {
     bottom: 3%;
 }
   
-.fourthSection > .downlogo > img {
+.downlogo img {
     width: 100%;
     height: 100%;
 }
@@ -692,35 +593,35 @@ nav > ul > .rightNavbar > li > a {
 /* Start  of footer */
 footer {
   width: 100%;
-  height: 67rem;
+  height: 40rem;
   /* border: 2px solid red; */
   padding: 20px;
   color: black;
   position: relative;
 }
 
-footer > .footerDetailsDiv {
+.footerDetailsDiv {
     /* border: 2px solid green; */
     width: 100%;
     height: 10rem;
     color: black;
     text-align: center;
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
   }
   
-footer > .footerDetailsDiv > #getintouch{
+#getintouch{
     margin: 10px;
     color: rgb(85, 85, 85);
     font-size: 25px;
 }
   
-footer > .footerDetailsDiv > #contactme{
+#contactme{
     font-weight: bold;
     font-size: 70px;
     margin: 10px;
 } 
 
-footer > #emaillinkDiv{
+#emaillinkDiv{
     /* border: 2px solid orange; */
     width: 100%;
     height: 10rem;
@@ -730,9 +631,7 @@ footer > #emaillinkDiv{
     align-items: center;
 }
 
-footer > #emaillinkDiv > .emailDiv{
-    border: 2px solid;
-    border-color: rgb(154, 150, 150);
+.emailDiv{
     font-size: 25px;
     width: 40%;
     height: 7rem;
@@ -740,18 +639,28 @@ footer > #emaillinkDiv > .emailDiv{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     border-radius: 50px;
     padding-left: 20px;
+
+    @media (min-width: 770px) {
+      border:  2px solid rgb(154, 150, 150);
+    }
 }
 
-footer > #emaillinkDiv > .emailDiv > img{
+.emailDiv  img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
     object-fit: cover;
 }
 
-footer > #emaillinkDiv > .emailDiv > #linkedinid{
+.emailDiv img:hover{
+    width: 55px;
+    height: 55px;
+}
+
+.emailDiv #linkedinid{
     width: 70px;
     height: 70px;
     border-radius: 50px;
@@ -759,24 +668,31 @@ footer > #emaillinkDiv > .emailDiv > #linkedinid{
     /* border: 2px solid green; */
 }
 
-footer > #emaillinkDiv > .emailDiv > #emailid{
+.emailDiv #linkedinid:hover{
+    width: 75px;
+    height: 75px;
+}
+.emailDiv > #emailid{
     margin-right: 50px;
+    text-decoration: none;
+    color: black;
 }
 
-footer > #emaillinkDiv > .emailDiv > p{
+.emailDiv > p{
     margin-right: 30px;
 }
 
-footer > #footerNavDiv{
-    width: 550px;
+#footerNavDiv{
+    width: 100%;
     height: 7rem;
     bottom: 10px;
     margin-top: 15%;
-    margin-left: 35%;
+    /* margin-left: 26%; */
+    /* border: 2px solid black; */
 }
 
-footer > #footerNavDiv > ul{
-    text-decoration: none;
+#footerNavDiv  ul
+{
     list-style: none;
     font-size: 40px;
     display: flex;
@@ -784,17 +700,455 @@ footer > #footerNavDiv > ul{
     align-items: center;
     gap: 3rem;
     padding: 10px;
-    margin: 0;
+    margin: 0;}
 
+#footerNavDiv  ul  li  a{
+    text-decoration: none;
+    color: black;
 }
 
-footer > .copyRightDiv{
+.copyRightDiv{
     /* border: 2px solid black; */
     width: 550px;
     height: 5rem;
     font-size: 20px;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     text-align: center;
     padding-top: 10px;
 }
 /* end  of footer */
+
+/* Start  of message page */
+#formdiv{
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 50px;
+    padding: 25px;
+    font-size: 30px;
+    box-shadow: 5px 15px gray;
+    background-color: #f5f5f5;
+    color: black;
+    margin-left: 25%;
+    margin-top: 5rem;
+}
+
+form{
+    font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    background-color:gray;
+    width: 96%;
+}
+
+.inputDiv label{
+    margin-bottom: 50px;
+}
+
+.inputDiv input, .inputDiv textarea{
+    font-size: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#nameDiv input{
+    margin-left: 10rem;
+    width: 350px;
+}
+
+#emailDiv input{
+    margin-left: 10.9rem;
+    width: 350px;
+}
+
+#messageDiv
+{
+    display: flex;
+    align-items: center;
+}
+
+#messageDiv textarea{
+    margin-left: 8.5rem;
+    width: 600px;
+    height: 100px;
+}
+
+.inputDivsubmit button
+{
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 45px;
+  font-weight: bold;
+  width: 250px;
+  height: 4rem;
+  margin-left: 19rem;
+  margin-top: 3rem;
+}
+
+.inputDivsubmit >button:hover{
+    background-color: rgb(52, 51, 51);
+    color: white;
+    box-shadow: 5px 10px 13px #888888;
+    border: 0 ;
+}
+
+/* end  of message page */
+/* end  of web page */
+
+/* Header/logo Title */
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.row {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.navText {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: flex;
+  width: 100%;
+  background-color: red;
+  
+}
+[class*="col-"] {
+  /* Removed float: left; */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  
+}
+
+.header {
+  height: 100px; /* You can adjust the height as needed */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-user-img {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 30px;
+
+  .img-wrapper {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    padding: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.user-img {
+  position: relative;
+  width: fit-content;
+  /* margin: 0 auto 30px; */
+
+  .img-wrapper {
+    width: 26rem;
+    height: 32rem;
+    /* left: 17%; */
+    border-radius: 15%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    padding: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.project-img {
+  position: relative;
+  width: fit-content;
+  margin: 10px auto 30px;
+
+  .img-wrapper {
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid orange; */
+    /* margin: 40px; */
+    border-radius: 40px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    padding: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.main {
+  margin-top: 2%;
+}
+
+.header {
+  margin-top: 2%;
+  padding: 10px 0;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+    /* Custom CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .col {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      padding: 0 15px;
+    }
+
+    /* Header Section */
+
+    .leftNavbar,
+    .rightNavbar {
+      flex: 1;
+      font-size: 22px;
+  /* margin-left: 50px; */
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+    }
+
+    ul{
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+    .leftNavbar > ul> li > a:hover, .rightNavbar > ul>  li > a:hover{
+      text-decoration-line: underline;
+      text-shadow: 2px 2px rgb(154, 150, 150);
+  }
+
+    .centerNavbar {
+      flex: 2;
+      text-align: center;
+    }
+
+    .leftNavbar ul,
+    .rightNavbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .leftNavbar ul li,
+    .rightNavbar ul li {
+      display: inline;
+      margin-right: 20px;
+      color: black;
+    }
+
+    .leftNavbar ul li a,
+    .rightNavbar ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #personalDetailDiv {
+      text-align: center;
+    }
+
+    #namediv {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .hellodiv {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .buttonsDiv {
+      /* margin-top: 20px; */
+    }
+
+    .buttons {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .socialMediaDetails {
+      margin-top: 20px;
+    }
+
+    .socialMedialogo {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* Second Section */
+    #getToKnowDiv {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #getToKnowpara {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    #aboutmepara {
+      font-size: 20px;
+      margin-top: 0;
+    }
+    
