@@ -317,7 +317,7 @@ body {
 }
 
 .secondSection > .aboutDiv > #imageDiv {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   position: absolute;
   overflow: hidden;
   width: 26rem;
@@ -463,18 +463,19 @@ body {
   width: 100%;
   height: 100%;
 }
+/* end  of second part in section */
 
 /* Start  of third part in section */
 .thirdSection {
   width: 100%;
-  height: 66rem;
-  border: 2px solid red;
+  height: 68rem;
+  /* border: 2px solid red; */
   position: relative;
   margin-top: 5rem;
 }
 
 .thirdSection > #experienceheadingDiv {
-  border: 2px solid red;
+  /* border: 2px solid green; */
   width: 100%;
   height: 10rem;
   color: black;
@@ -497,19 +498,15 @@ body {
 .thirdSection > .experienceDetailsDiv {
   /* border: 2px solid green; */
   width: 100%;
-  height: 43rem;
+  height: 52rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
 }
 
 .thirdSection > .experienceDetailsDiv > .skills {
   border: 2px solid;
-  border-color: rgb(85, 85, 85); ;
-  width: 800px;
-  height: 30rem;
+  border-color: rgb(85, 85, 85);
+  width: 100%;
+  height: 50rem;
   border-radius: 30px;
 }
 
@@ -523,7 +520,9 @@ body {
 .thirdSection > .experienceDetailsDiv > .skills > .skillsName {
   margin: 10px;
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .thirdSection > .experienceDetailsDiv > .skills > .skillsName > .skillsDetails {
@@ -577,7 +576,7 @@ body {
   /* border: 2px solid red; */
   position: absolute;
   right: 2%;
-  bottom: 3%;
+  bottom: 1%;
 }
 
 .thirdSection > .downlogo > a >img {
@@ -586,7 +585,7 @@ body {
 }
 /* end  of third part in section */
 
-/* end  of second part in section */
+
 
 /* end  of mobile page */
 
